@@ -1,0 +1,18 @@
+# PocketStore 
+
+PocketStore es una aplicación web de una sola página (SPA) que funciona como un catálogo de demostración, diseñada para operar completamente sin internet mediante tecnologías PWA (Progressive Web App).
+
+## Características
+- **App Shell Instantáneo:** Interfaz de usuario rápida e inamovible.
+- **Modo Offline:** Uso de Service Workers y Cache Storage para permitir el acceso a la aplicación sin conexión a internet.
+- **Contenido Dinámico:** Obtención de datos mediante peticiones asíncronas a APIs gratuitas (`JSONPlaceholder`).
+- **Instalable:** Puede instalarse en el dispositivo móvil o de escritorio a través de su `manifest.json`.
+
+## Estructura del Proyecto
+
+## Instrucciones de Ejecución
+1. Clona o descarga este repositorio.
+2. Dado que los Service Workers requieren HTTPS o `localhost`, no puedes abrir el archivo `index.html` directamente.
+3. Utiliza una extensión de servidor local como **Live Server** en VSCode, o ejecuta `npx serve` en la terminal.
+4. Abre la consola del navegador y dirígete a la pestaña "Application" para verificar que el Service Worker se haya registrado e instalado correctamente.
+5. Apaga tu conexión a internet (o selecciona "Offline" en la pestaña Network de DevTools) y recarga la página para probar la caché.
